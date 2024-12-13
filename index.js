@@ -4,7 +4,8 @@ import {
     showRandomCard,
     handleOnNavbarClick,
     handleOnLinkClick,
-    showDetailsofCocktail,
+    showDetailsofCocktailStartPage,
+    showDetailsofCocktailSearchPage,
     searchEngine,
     detailsOfCocktailID,
   } from "./utilities.js";
@@ -20,6 +21,7 @@ import {
   
   getRandomCard();
   searchEngine();
+  detailsOfCocktailID
   
   navbar.addEventListener("click", handleOnNavbarClick);
   startPage.addEventListener("click", handleOnNavbarClick);
