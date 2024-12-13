@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <h5>The Drinktionary</h5>
+        <span class="link" id="start-link">Start</span>
+        <span class="link" id="search-link">Search</span>
+      </div>
+    </nav>
+
+    <section id="start-page" class="open">
+      <h1>Start Page</h1>
+      <p>This is the Start Page</p>
+    </section>
+
+    <section id="details-page">
+      <h1>Details Page</h1>
+      <p>This is the details page of a cocktail</p>
+    </section>
+
+    <section id="search-page">
+      <h1>Search Page</h1>
+      <p>This is the Search Page of our Database</p>
+      <form>
+        <input id="inputfield" placeholder="Search cocktail by name">
+        <button id="searchBtn">Search</button>
+      </form>
+      <div id="results"></div>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
