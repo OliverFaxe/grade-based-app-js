@@ -22,7 +22,7 @@ export function showRandomCard(cocktail) {
     const mappedCocktail = mapRawCocktailData(cocktail);
 
   const randomCard = `
-        <div class="randomcard" style="width: 18rem">
+        <div class="randomcard">
         <img src="${mappedCocktail.thumbnail}" class="card-img-top" alt="${mappedCocktail.name}" />
         <div class="card-body">
           <h5 class="card-title">${mappedCocktail.name}</h5>
@@ -100,7 +100,7 @@ export function showDetailsofCocktailStartPage(cocktail) {
     const selectedCard = `
         <h1>Details Page</h1>
         <p>This is the details page of a cocktail</p>
-        <div class="randomcard" style="width: 18rem">
+        <div class="randomcard">
         <img src="${cocktail.thumbnail}" class="card-img-top" alt="${cocktail.name}" />
         <div class="card-body">
         <h5 class="card-title">${cocktail.name}</h5>
@@ -139,12 +139,11 @@ export function showDetailsofCocktailSearchPage(cocktail) {
   const mappedIngredients = cocktail.ingredients
   .map((ingredient) => `<li>${ingredient.ingredient} - ${ingredient.measure || "After preference"}</li>`) // La till en OR check om measurement är null
   .join("");
-      
 
   const selectedCard = `
       <h1>Details Page</h1>
       <p>This is the details page of a cocktail</p>
-      <div class="randomcard" style="width: 18rem">
+      <div class="randomcard">
       <img src="${cocktail.thumbnail}" class="card-img-top" alt="${cocktail.name}" />
       <div class="card-body">
       <h5 class="card-title">${cocktail.name}</h5>
@@ -214,7 +213,7 @@ export async function searchEngine(searchInput) {
 
     if (data.drinks) {
     results.innerHTML = data.drinks.map(drink => `
-      <div class="randomcard" style="width: 18rem">
+      <div class="randomcard">
         <img src="${drink.strDrinkThumb}" class="card-img-top" alt="${drink.strDrink}" />
         <div class="card-body">
           <h5 class="card-title">${drink.strDrink}</h5>
